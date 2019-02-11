@@ -10,10 +10,9 @@ import {setSearchField, requestRobots} from '../actions'
 
 const mapStateToProps = state => {
 	return {
-		searchField: state.searchField,
-		robots: state.robots,
-		isPending: state.isPending,
-		error: state.error
+		searchField: state.searchRobots.searchField,
+    	robots: state.requestRobots.robots,
+    	isPending: state.requestRobots.isPending
 	}
 }
 
